@@ -3,7 +3,7 @@
    Laboratorio Digital 2026
    =========================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Mono:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Lato:wght@300;400;700&display=swap');
 
 /* === Variables === */
 :root {
@@ -12,8 +12,8 @@
   --color-accent: #c8602a;
   --color-mid: #7a6f65;
   --color-light: #e8e2d9;
-  --font-display: 'Cormorant Garamond', serif;
-  --font-mono: 'DM Mono', monospace;
+  --font-display: 'Montserrat', sans-serif;
+  --font-body: 'Lato', sans-serif;
   --max-width: 820px;
   --spacing-section: 4rem;
 }
@@ -29,7 +29,7 @@
 body {
   background-color: var(--color-bg);
   color: var(--color-dark);
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 1.125rem;
   line-height: 1.75;
   font-weight: 300;
@@ -50,10 +50,11 @@ nav {
 }
 
 nav .nav-logo {
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
   font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  font-weight: 600;
   color: var(--color-dark);
   text-decoration: none;
 }
@@ -65,10 +66,11 @@ nav .nav-links {
 }
 
 nav .nav-links a {
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  font-weight: 400;
   color: var(--color-mid);
   text-decoration: none;
   transition: color 0.2s;
@@ -104,7 +106,7 @@ h1 em {
 /* === h2 === */
 h2 {
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-size: clamp(1.3rem, 3vw, 1.9rem);
   font-weight: 600;
   letter-spacing: 0.01em;
   color: var(--color-dark);
@@ -116,7 +118,7 @@ h2 {
 
 /* === Párrafos === */
 p {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 1.05rem;
   line-height: 1.85;
   color: #3a332c;
@@ -126,7 +128,7 @@ p {
 
 /* === Énfasis tipográfico para lectura en pantalla === */
 p strong {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-dark);
 }
 
@@ -150,10 +152,11 @@ a:hover {
 }
 
 .hero-tag {
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
   font-size: 0.72rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+  font-weight: 400;
   color: var(--color-mid);
   margin-bottom: 1.2rem;
   display: block;
@@ -181,7 +184,7 @@ a:hover {
 
 .referente-card h3 {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   margin-bottom: 0.3rem;
   color: var(--color-dark);
@@ -195,26 +198,30 @@ a:hover {
 }
 
 .referente-card a {
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
   font-size: 0.7rem;
   letter-spacing: 0.08em;
+  font-weight: 600;
 }
 
-/* === Imagen === */
+/* === Imágenes === */
 .obra-img {
-  width: 100%;
-  max-width: 640px;
-  height: auto;
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
   display: block;
   margin: 2rem 0 0.6rem;
   border: 1px solid var(--color-light);
+  padding: 1rem;
+  background: #fff;
 }
 
 .img-caption {
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
   font-size: 0.72rem;
   color: var(--color-mid);
   letter-spacing: 0.05em;
+  font-weight: 300;
   margin-bottom: 2rem;
 }
 
@@ -227,10 +234,11 @@ a:hover {
 }
 
 .social-links a {
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  font-weight: 600;
   padding: 0.5rem 1rem;
   border: 1px solid var(--color-dark);
   color: var(--color-dark);
@@ -261,10 +269,11 @@ a:hover {
 footer {
   text-align: center;
   padding: 2rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
   font-size: 0.7rem;
   color: var(--color-mid);
   letter-spacing: 0.08em;
+  font-weight: 300;
   border-top: 1px solid var(--color-light);
 }
 
